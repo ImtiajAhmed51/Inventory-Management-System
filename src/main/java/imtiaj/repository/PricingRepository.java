@@ -14,9 +14,11 @@ public class PricingRepository {
 
 
     private SessionFactory sessionFactory;
+
     public PricingRepository(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
     }
+
     public void create(Pricing sf) {
         Session session = sessionFactory.getCurrentSession();
         session.save(sf);

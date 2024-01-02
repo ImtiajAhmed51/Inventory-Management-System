@@ -8,12 +8,15 @@ import org.hibernate.SessionFactory;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+
 @Repository
 public class StockRepository {
     private SessionFactory sessionFactory;
+
     public StockRepository(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
     }
+
     public void create(Stock sf) {
         Session session = sessionFactory.getCurrentSession();
         session.save(sf);

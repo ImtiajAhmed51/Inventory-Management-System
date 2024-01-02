@@ -12,9 +12,11 @@ import java.util.List;
 @Repository
 public class SupplierLogRepository {
     private SessionFactory sessionFactory;
+
     public SupplierLogRepository(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
     }
+
     public void create(SupplierLogEntity sf) {
         Session session = sessionFactory.getCurrentSession();
         session.save(sf);

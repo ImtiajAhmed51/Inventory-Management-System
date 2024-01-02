@@ -12,7 +12,7 @@ import java.util.List;
 @Service
 public class ProductInvoiceService {
 
-@Autowired
+    @Autowired
     private ProductInvoiceRepository productInvoiceRepository;
 
     public void create(ProductInvoice productInvoice) {
@@ -35,7 +35,6 @@ public class ProductInvoiceService {
     public void deleteProductInvoice(ProductInvoice productInvoice) {
         productInvoiceRepository.delete(productInvoice.getRefId());
     }
-
 
 
 }

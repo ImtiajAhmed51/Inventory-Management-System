@@ -1,4 +1,5 @@
 package imtiaj.repository;
+
 import imtiaj.model.Invoice;
 import org.hibernate.Query;
 import org.hibernate.Session;
@@ -8,11 +9,13 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public class InvoiceRepository  {
+public class InvoiceRepository {
     private SessionFactory sessionFactory;
+
     public InvoiceRepository(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
     }
+
     public void create(Invoice sf) {
         Session session = sessionFactory.getCurrentSession();
         session.save(sf);

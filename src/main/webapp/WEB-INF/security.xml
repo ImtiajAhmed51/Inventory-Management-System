@@ -2,7 +2,8 @@
          xmlns:b="http://www.springframework.org/schema/beans"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xmlns:security="http://www.springframework.org/schema/security"
-         xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
+         xsi:schemaLocation="http://www.springframework.org/schema/beans
+                             https://www.springframework.org/schema/beans/spring-beans.xsd
 						http://www.springframework.org/schema/security https://www.springframework.org/schema/security/spring-security.xsd">
 
     <!--<http auto-config="true">
@@ -21,16 +22,16 @@
 
         <intercept-url pattern="/user"
                        access="hasRole('Admin')" />
-        <security:intercept-url pattern="/authenticate"
-                                access="permitAll" />
-        <security:intercept-url pattern="/storedFoodItem"
-                                access="permitAll" />
-        <security:intercept-url pattern="/all"
-                                access="permitAll" />
         <security:intercept-url pattern="/**"
                                 access="isAuthenticated()" />
         <security:csrf disabled="true" />
        <!-- <http-basic/>-->
+
+
+
+
+
+
     </security:http>
 
     <!--cors activation bean-->

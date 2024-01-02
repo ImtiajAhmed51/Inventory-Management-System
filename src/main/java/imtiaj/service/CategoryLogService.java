@@ -17,6 +17,7 @@ public class CategoryLogService {
     public void create(CategoryLogEntity categoryLog) {
         categoryLogRepository.create(categoryLog);
     }
+
     public void edit(CategoryLogEntity categoryLog) {
         categoryLogRepository.edit(categoryLog);
     }
@@ -37,8 +38,6 @@ public class CategoryLogService {
     public void deleteCategoryLog(CategoryLogEntity categoryLog) {
         categoryLogRepository.delete(categoryLog.getCategoryId());
     }
-
-
 
 
 }

@@ -3,113 +3,114 @@ package imtiaj.model;
 import javax.persistence.*;
 import java.math.BigDecimal;
 import java.util.Date;
+
 @Entity
-@Table(name="stock_log")
+@Table(name = "stock_log")
 public class StockLogEntity {
 
-	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private int refId;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int refId;
 
-	private int categoryId;
+    private int categoryId;
 
-	@Temporal(TemporalType.TIMESTAMP)
-	private Date createdDateTime;
+    @Temporal(TemporalType.TIMESTAMP)
+    private Date createdDateTime;
 
-	private String createdUser;
+    private String createdUser;
 
-	@Temporal(TemporalType.DATE)
-	private Date dateStock;
+    @Temporal(TemporalType.DATE)
+    private Date dateStock;
 
-	@Temporal(TemporalType.TIMESTAMP)
-	private Date lastModifiedDateTime;
+    @Temporal(TemporalType.TIMESTAMP)
+    private Date lastModifiedDateTime;
 
-	private String lastModifiedUser;
+    private String lastModifiedUser;
 
-	private int productId;
+    private int productId;
 
-	private int quantity;
+    private int quantity;
 
-	//private int stockId;
+    //private int stockId;
 
-	private int supplierId;
+    private int supplierId;
 
-	private BigDecimal version;
+    private BigDecimal version;
 
-	public StockLogEntity() {
-	}
+    public StockLogEntity() {
+    }
 
-	public int getRefId() {
-		return this.refId;
-	}
+    public int getRefId() {
+        return this.refId;
+    }
 
-	public void setRefId(int refId) {
-		this.refId = refId;
-	}
+    public void setRefId(int refId) {
+        this.refId = refId;
+    }
 
-	public int getCategoryId() {
-		return this.categoryId;
-	}
+    public int getCategoryId() {
+        return this.categoryId;
+    }
 
-	public void setCategoryId(int categoryId) {
-		this.categoryId = categoryId;
-	}
+    public void setCategoryId(int categoryId) {
+        this.categoryId = categoryId;
+    }
 
-	public Date getCreatedDateTime() {
-		return this.createdDateTime;
-	}
+    public Date getCreatedDateTime() {
+        return this.createdDateTime;
+    }
 
-	public void setCreatedDateTime(Date createdDateTime) {
-		this.createdDateTime = createdDateTime;
-	}
+    public void setCreatedDateTime(Date createdDateTime) {
+        this.createdDateTime = createdDateTime;
+    }
 
-	public String getCreatedUser() {
-		return this.createdUser;
-	}
+    public String getCreatedUser() {
+        return this.createdUser;
+    }
 
-	public void setCreatedUser(String createdUser) {
-		this.createdUser = createdUser;
-	}
+    public void setCreatedUser(String createdUser) {
+        this.createdUser = createdUser;
+    }
 
-	public Date getDateStock() {
-		return this.dateStock;
-	}
+    public Date getDateStock() {
+        return this.dateStock;
+    }
 
-	public void setDateStock(Date dateStock) {
-		this.dateStock = dateStock;
-	}
+    public void setDateStock(Date dateStock) {
+        this.dateStock = dateStock;
+    }
 
-	public Date getLastModifiedDateTime() {
-		return this.lastModifiedDateTime;
-	}
+    public Date getLastModifiedDateTime() {
+        return this.lastModifiedDateTime;
+    }
 
-	public void setLastModifiedDateTime(Date lastModifiedDateTime) {
-		this.lastModifiedDateTime = lastModifiedDateTime;
-	}
+    public void setLastModifiedDateTime(Date lastModifiedDateTime) {
+        this.lastModifiedDateTime = lastModifiedDateTime;
+    }
 
-	public String getLastModifiedUser() {
-		return this.lastModifiedUser;
-	}
+    public String getLastModifiedUser() {
+        return this.lastModifiedUser;
+    }
 
-	public void setLastModifiedUser(String lastModifiedUser) {
-		this.lastModifiedUser = lastModifiedUser;
-	}
+    public void setLastModifiedUser(String lastModifiedUser) {
+        this.lastModifiedUser = lastModifiedUser;
+    }
 
-	public int getProductId() {
-		return this.productId;
-	}
+    public int getProductId() {
+        return this.productId;
+    }
 
-	public void setProductId(int productId) {
-		this.productId = productId;
-	}
+    public void setProductId(int productId) {
+        this.productId = productId;
+    }
 
-	public int getQuantity() {
-		return this.quantity;
-	}
+    public int getQuantity() {
+        return this.quantity;
+    }
 
-	public void setQuantity(int quantity) {
-		this.quantity = quantity;
-	}
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
 
 	/*public int getStockId() {
 		return this.stockId;
@@ -119,20 +120,20 @@ public class StockLogEntity {
 		this.stockId = stockId;
 	}*/
 
-	public int getSupplierId() {
-		return this.supplierId;
-	}
+    public int getSupplierId() {
+        return this.supplierId;
+    }
 
-	public void setSupplierId(int supplierId) {
-		this.supplierId = supplierId;
-	}
+    public void setSupplierId(int supplierId) {
+        this.supplierId = supplierId;
+    }
 
-	public BigDecimal getVersion() {
-		return this.version;
-	}
+    public BigDecimal getVersion() {
+        return this.version;
+    }
 
-	public void setVersion(BigDecimal version) {
-		this.version = version;
-	}
+    public void setVersion(BigDecimal version) {
+        this.version = version;
+    }
 
 }

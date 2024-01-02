@@ -1,4 +1,5 @@
 package imtiaj.restController;
+
 import imtiaj.model.Category;
 import imtiaj.model.TheLogConverter;
 import imtiaj.service.CategoryLogService;
@@ -8,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
+
 @RestController
 public class CategoryController {
 

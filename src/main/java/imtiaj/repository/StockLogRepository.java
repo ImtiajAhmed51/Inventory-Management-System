@@ -9,11 +9,13 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public class StockLogRepository{
+public class StockLogRepository {
     private SessionFactory sessionFactory;
+
     public StockLogRepository(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
     }
+
     public void create(StockLogEntity sf) {
         Session session = sessionFactory.getCurrentSession();
         session.save(sf);

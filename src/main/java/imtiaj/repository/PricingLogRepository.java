@@ -1,4 +1,5 @@
 package imtiaj.repository;
+
 import imtiaj.model.PricingLogEntity;
 import org.hibernate.Query;
 import org.hibernate.Session;
@@ -11,9 +12,11 @@ import java.util.List;
 public class PricingLogRepository {
 
     private SessionFactory sessionFactory;
+
     public PricingLogRepository(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
     }
+
     public void create(PricingLogEntity sf) {
         Session session = sessionFactory.getCurrentSession();
         session.save(sf);

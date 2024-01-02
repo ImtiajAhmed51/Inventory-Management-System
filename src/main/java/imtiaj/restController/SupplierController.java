@@ -1,4 +1,5 @@
 package imtiaj.restController;
+
 import imtiaj.model.Supplier;
 import imtiaj.model.TheLogConverter;
 import imtiaj.service.SupplierLogService;
@@ -43,7 +44,6 @@ public class SupplierController {
         supplierService.deleteSupplier(supplier);
         supplierLogService.create(TheLogConverter.supplierLogConverter(supplier));
     }
-
 
 
 }

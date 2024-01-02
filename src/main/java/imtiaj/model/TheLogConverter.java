@@ -3,8 +3,8 @@ package imtiaj.model;
 
 public class TheLogConverter {
 
-    public static CategoryLogEntity categoryLogConverter(Category category){
-        CategoryLogEntity categoryLog=new CategoryLogEntity();
+    public static CategoryLogEntity categoryLogConverter(Category category) {
+        CategoryLogEntity categoryLog = new CategoryLogEntity();
         categoryLog.setCategoryId(category.getCategoryId());
         categoryLog.setCategoryName(category.getCategoryName());
         categoryLog.setCreatedDateTime(category.getCreatedDateTime());
@@ -15,8 +15,8 @@ public class TheLogConverter {
         return categoryLog;
     }
 
-    public static PricingLogEntity pricingLogLogConverter(Pricing pricing){
-        PricingLogEntity pricingLog=new  PricingLogEntity();
+    public static PricingLogEntity pricingLogLogConverter(Pricing pricing) {
+        PricingLogEntity pricingLog = new PricingLogEntity();
         pricingLog.setPricingId(pricing.getPricingId());
         pricingLog.setCreatedDateTime(pricing.getCreatedDateTime());
         pricingLog.setCreatedUser(pricing.getCreatedUser());
@@ -30,8 +30,8 @@ public class TheLogConverter {
         return pricingLog;
     }
 
-    public static ProductLogEntity productLogConverter(Product product){
-        ProductLogEntity productLog=new ProductLogEntity();
+    public static ProductLogEntity productLogConverter(Product product) {
+        ProductLogEntity productLog = new ProductLogEntity();
         productLog.setProductId(product.getProductId());
         productLog.setCategoryId(product.getProductId());
         productLog.setCreatedDateTime(product.getCreatedDateTime());
@@ -46,8 +46,8 @@ public class TheLogConverter {
         return productLog;
     }
 
-    public static StockLogEntity stockLogConverter(Stock stock){
-        StockLogEntity stockLog=new StockLogEntity();
+    public static StockLogEntity stockLogConverter(Stock stock) {
+        StockLogEntity stockLog = new StockLogEntity();
         stockLog.setRefId(stock.getRefId());
         stockLog.setCategoryId(stock.getCategory().getCategoryId());
         stockLog.setCreatedDateTime(stock.getCreatedDateTime());
@@ -62,8 +62,8 @@ public class TheLogConverter {
         return stockLog;
     }
 
-    public static SupplierLogEntity supplierLogConverter(Supplier supplier){
-        SupplierLogEntity supplierLog=new SupplierLogEntity();
+    public static SupplierLogEntity supplierLogConverter(Supplier supplier) {
+        SupplierLogEntity supplierLog = new SupplierLogEntity();
         supplierLog.setSupplierId(supplier.getSupplierId());
         supplierLog.setCreatedDateTime(supplier.getCreatedDateTime());
         supplierLog.setCreatedUser(supplier.getCreatedUser());

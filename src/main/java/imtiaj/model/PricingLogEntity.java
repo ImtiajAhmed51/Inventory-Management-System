@@ -3,116 +3,117 @@ package imtiaj.model;
 import javax.persistence.*;
 import java.math.BigDecimal;
 import java.util.Date;
+
 @Entity
-@Table(name="pricing_log")
-public class PricingLogEntity{
-	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private int pricingId;
+@Table(name = "pricing_log")
+public class PricingLogEntity {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int pricingId;
 
-	@Temporal(TemporalType.TIMESTAMP)
-	private Date createdDateTime;
+    @Temporal(TemporalType.TIMESTAMP)
+    private Date createdDateTime;
 
-	private String createdUser;
+    private String createdUser;
 
-	@Temporal(TemporalType.TIMESTAMP)
-	private Date lastModifiedDateTime;
+    @Temporal(TemporalType.TIMESTAMP)
+    private Date lastModifiedDateTime;
 
-	private String lastModifiedUser;
+    private String lastModifiedUser;
 
-	private BigDecimal pricingDiscountPrecentage;
+    private BigDecimal pricingDiscountPrecentage;
 
-	@Temporal(TemporalType.DATE)
-	private Date pricingEffectiveDate;
+    @Temporal(TemporalType.DATE)
+    private Date pricingEffectiveDate;
 
-	@Temporal(TemporalType.DATE)
-	private Date pricingExpireDate;
+    @Temporal(TemporalType.DATE)
+    private Date pricingExpireDate;
 
-	private String pricingName;
+    private String pricingName;
 
-	private BigDecimal version;
+    private BigDecimal version;
 
-	public PricingLogEntity() {
-	}
+    public PricingLogEntity() {
+    }
 
-	public int getPricingId() {
-		return this.pricingId;
-	}
+    public int getPricingId() {
+        return this.pricingId;
+    }
 
-	public void setPricingId(int pricingId) {
-		this.pricingId = pricingId;
-	}
+    public void setPricingId(int pricingId) {
+        this.pricingId = pricingId;
+    }
 
-	public Date getCreatedDateTime() {
-		return this.createdDateTime;
-	}
+    public Date getCreatedDateTime() {
+        return this.createdDateTime;
+    }
 
-	public void setCreatedDateTime(Date createdDateTime) {
-		this.createdDateTime = createdDateTime;
-	}
+    public void setCreatedDateTime(Date createdDateTime) {
+        this.createdDateTime = createdDateTime;
+    }
 
-	public String getCreatedUser() {
-		return this.createdUser;
-	}
+    public String getCreatedUser() {
+        return this.createdUser;
+    }
 
-	public void setCreatedUser(String createdUser) {
-		this.createdUser = createdUser;
-	}
+    public void setCreatedUser(String createdUser) {
+        this.createdUser = createdUser;
+    }
 
-	public Date getLastModifiedDateTime() {
-		return this.lastModifiedDateTime;
-	}
+    public Date getLastModifiedDateTime() {
+        return this.lastModifiedDateTime;
+    }
 
-	public void setLastModifiedDateTime(Date lastModifiedDateTime) {
-		this.lastModifiedDateTime = lastModifiedDateTime;
-	}
+    public void setLastModifiedDateTime(Date lastModifiedDateTime) {
+        this.lastModifiedDateTime = lastModifiedDateTime;
+    }
 
-	public String getLastModifiedUser() {
-		return this.lastModifiedUser;
-	}
+    public String getLastModifiedUser() {
+        return this.lastModifiedUser;
+    }
 
-	public void setLastModifiedUser(String lastModifiedUser) {
-		this.lastModifiedUser = lastModifiedUser;
-	}
+    public void setLastModifiedUser(String lastModifiedUser) {
+        this.lastModifiedUser = lastModifiedUser;
+    }
 
-	public BigDecimal getPricingDiscountPrecentage() {
-		return this.pricingDiscountPrecentage;
-	}
+    public BigDecimal getPricingDiscountPrecentage() {
+        return this.pricingDiscountPrecentage;
+    }
 
-	public void setPricingDiscountPrecentage(BigDecimal pricingDiscountPrecentage) {
-		this.pricingDiscountPrecentage = pricingDiscountPrecentage;
-	}
+    public void setPricingDiscountPrecentage(BigDecimal pricingDiscountPrecentage) {
+        this.pricingDiscountPrecentage = pricingDiscountPrecentage;
+    }
 
-	public Date getPricingEffectiveDate() {
-		return this.pricingEffectiveDate;
-	}
+    public Date getPricingEffectiveDate() {
+        return this.pricingEffectiveDate;
+    }
 
-	public void setPricingEffectiveDate(Date pricingEffectiveDate) {
-		this.pricingEffectiveDate = pricingEffectiveDate;
-	}
+    public void setPricingEffectiveDate(Date pricingEffectiveDate) {
+        this.pricingEffectiveDate = pricingEffectiveDate;
+    }
 
-	public Date getPricingExpireDate() {
-		return this.pricingExpireDate;
-	}
+    public Date getPricingExpireDate() {
+        return this.pricingExpireDate;
+    }
 
-	public void setPricingExpireDate(Date pricingExpireDate) {
-		this.pricingExpireDate = pricingExpireDate;
-	}
+    public void setPricingExpireDate(Date pricingExpireDate) {
+        this.pricingExpireDate = pricingExpireDate;
+    }
 
-	public String getPricingName() {
-		return this.pricingName;
-	}
+    public String getPricingName() {
+        return this.pricingName;
+    }
 
-	public void setPricingName(String pricingName) {
-		this.pricingName = pricingName;
-	}
+    public void setPricingName(String pricingName) {
+        this.pricingName = pricingName;
+    }
 
-	public BigDecimal getVersion() {
-		return this.version;
-	}
+    public BigDecimal getVersion() {
+        return this.version;
+    }
 
-	public void setVersion(BigDecimal version) {
-		this.version = version;
-	}
+    public void setVersion(BigDecimal version) {
+        this.version = version;
+    }
 
 }

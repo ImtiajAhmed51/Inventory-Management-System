@@ -1,4 +1,5 @@
 package imtiaj.service;
+
 import imtiaj.model.PricingLogEntity;
 import imtiaj.repository.PricingLogRepository;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,4 +1,5 @@
 package imtiaj.service;
+
 import imtiaj.model.Invoice;
 import imtiaj.repository.InvoiceRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,7 +36,6 @@ public class InvoiceService {
     public void deleteInvoice(Invoice invoice) {
         invoiceRepository.delete(invoice.getInvoiceId());
     }
-
 
 
 }

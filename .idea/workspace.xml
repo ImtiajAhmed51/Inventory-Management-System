@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d0aa62b-b9e9-430b-815f-876c9cad7212" name="Changes" comment="init">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="4d0aa62b-b9e9-430b-815f-876c9cad7212" name="Changes" comment="fixed error">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/imtiaj/model/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/imtiaj/model/Category.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/imtiaj/model/CategoryLogEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/imtiaj/model/CategoryLogEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/imtiaj/model/Invoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/imtiaj/model/Invoice.java" afterDir="false" />
@@ -25,9 +25,38 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/imtiaj/model/StockLogEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/imtiaj/model/StockLogEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/imtiaj/model/Supplier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/imtiaj/model/Supplier.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/imtiaj/model/SupplierLogEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/imtiaj/model/SupplierLogEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/imtiaj/model/TheLogConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/imtiaj/model/TheLogConverter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/imtiaj/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/imtiaj/model/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/imtiaj/model/UserLogEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/imtiaj/model/UserLogEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/imtiaj/model/UserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/imtiaj/model/UserRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/imtiaj/repository/CategoryLogRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/imtiaj/repository/CategoryLogRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/imtiaj/repository/CategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/imtiaj/repository/CategoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/imtiaj/repository/InvoiceRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/imtiaj/repository/InvoiceRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/imtiaj/repository/PricingLogRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/imtiaj/repository/PricingLogRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/imtiaj/repository/PricingRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/imtiaj/repository/PricingRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/imtiaj/repository/ProductInvoiceRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/imtiaj/repository/ProductInvoiceRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/imtiaj/repository/ProductLogRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/imtiaj/repository/ProductLogRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/imtiaj/repository/ProductPricingRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/imtiaj/repository/ProductPricingRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/imtiaj/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/imtiaj/repository/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/imtiaj/repository/StockLogRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/imtiaj/repository/StockLogRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/imtiaj/repository/StockRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/imtiaj/repository/StockRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/imtiaj/repository/SupplierLogRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/imtiaj/repository/SupplierLogRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/imtiaj/repository/SupplierRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/imtiaj/repository/SupplierRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/imtiaj/restController/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/imtiaj/restController/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/imtiaj/restController/InvoiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/imtiaj/restController/InvoiceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/imtiaj/restController/PricingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/imtiaj/restController/PricingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/imtiaj/restController/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/imtiaj/restController/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/imtiaj/restController/ProductPricingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/imtiaj/restController/ProductPricingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/imtiaj/restController/StockController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/imtiaj/restController/StockController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/imtiaj/restController/SupplierController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/imtiaj/restController/SupplierController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/imtiaj/service/CategoryLogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/imtiaj/service/CategoryLogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/imtiaj/service/InvoiceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/imtiaj/service/InvoiceService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/imtiaj/service/PricingLogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/imtiaj/service/PricingLogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/imtiaj/service/PricingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/imtiaj/service/PricingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/imtiaj/service/ProductInvoiceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/imtiaj/service/ProductInvoiceService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/imtiaj/service/ProductLogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/imtiaj/service/ProductLogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/imtiaj/service/ProductPricingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/imtiaj/service/ProductPricingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/imtiaj/service/SupplierLogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/imtiaj/service/SupplierLogService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/security.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/security.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -178,7 +207,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704145807298</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fixed error">
+      <option name="closed" value="true" />
+      <created>1704205542756</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1704205542756</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -195,6 +232,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="mod" />
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="fixed error" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed error" />
   </component>
 </project>

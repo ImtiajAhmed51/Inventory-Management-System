@@ -1,4 +1,5 @@
 package imtiaj.service;
+
 import imtiaj.model.ProductPricing;
 import imtiaj.repository.ProductPricingRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,11 +12,11 @@ import java.util.List;
 @Service
 public class ProductPricingService {
 
-@Autowired
+    @Autowired
     private ProductPricingRepository productPricingRepository;
 
 
-    public void create( ProductPricing productPricing) {
+    public void create(ProductPricing productPricing) {
         productPricingRepository.create(productPricing);
     }
 
@@ -28,11 +29,11 @@ public class ProductPricingService {
         return productPricingRepository.getAll();
     }
 
-    public void updateProductPricing( ProductPricing productPricing) {
+    public void updateProductPricing(ProductPricing productPricing) {
         productPricingRepository.edit(productPricing);
     }
 
-    public void deleteProductPricing( ProductPricing productPricing) {
+    public void deleteProductPricing(ProductPricing productPricing) {
         productPricingRepository.delete(productPricing.getRefId());
     }
 

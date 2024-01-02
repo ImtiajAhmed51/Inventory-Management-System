@@ -1,47 +1,48 @@
 package imtiaj.model;
 
 import javax.persistence.*;
+
 @Entity
-@Table(name="product_invoice")
+@Table(name = "product_invoice")
 public class ProductInvoice {
 
-	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private int refId;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int refId;
 
-	//bi-directional many-to-one association to Invoice
-	@ManyToOne
-	private Invoice invoice;
+    //bi-directional many-to-one association to Invoice
+    @ManyToOne
+    private Invoice invoice;
 
-	//bi-directional many-to-one association to Product
-	@ManyToOne
-	private Product product;
+    //bi-directional many-to-one association to Product
+    @ManyToOne
+    private Product product;
 
-	public ProductInvoice() {
-	}
+    public ProductInvoice() {
+    }
 
-	public int getRefId() {
-		return this.refId;
-	}
+    public int getRefId() {
+        return this.refId;
+    }
 
-	public void setRefId(int refId) {
-		this.refId = refId;
-	}
+    public void setRefId(int refId) {
+        this.refId = refId;
+    }
 
-	public Invoice getInvoice() {
-		return this.invoice;
-	}
+    public Invoice getInvoice() {
+        return this.invoice;
+    }
 
-	public void setInvoice(Invoice invoice) {
-		this.invoice = invoice;
-	}
+    public void setInvoice(Invoice invoice) {
+        this.invoice = invoice;
+    }
 
-	public Product getProduct() {
-		return this.product;
-	}
+    public Product getProduct() {
+        return this.product;
+    }
 
-	public void setProduct(Product product) {
-		this.product = product;
-	}
+    public void setProduct(Product product) {
+        this.product = product;
+    }
 
 }

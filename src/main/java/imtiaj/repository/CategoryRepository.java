@@ -1,4 +1,5 @@
 package imtiaj.repository;
+
 import imtiaj.model.Category;
 import org.hibernate.Query;
 import org.hibernate.Session;
@@ -8,12 +9,14 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public class CategoryRepository{
+public class CategoryRepository {
 
     private SessionFactory sessionFactory;
+
     public CategoryRepository(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
     }
+
     public void create(Category sf) {
         Session session = sessionFactory.getCurrentSession();
         session.save(sf);

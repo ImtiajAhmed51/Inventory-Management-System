@@ -33,7 +33,7 @@ public class InvoiceController {
         invoiceService.updateInvoice(invoice);
     }
 
-    @RequestMapping(method = RequestMethod.DELETE,value ="/invoices/{id}")
+    @RequestMapping(method = RequestMethod.DELETE, value = "/invoices/{id}")
     public void deleteInvoice(@RequestBody Invoice invoice) {
         invoiceService.deleteInvoice(invoice);
     }

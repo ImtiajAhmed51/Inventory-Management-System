@@ -11,9 +11,11 @@ import java.util.List;
 @Repository
 public class SupplierRepository {
     private SessionFactory sessionFactory;
+
     public SupplierRepository(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
     }
+
     public void create(Supplier sf) {
         Session session = sessionFactory.getCurrentSession();
         session.save(sf);

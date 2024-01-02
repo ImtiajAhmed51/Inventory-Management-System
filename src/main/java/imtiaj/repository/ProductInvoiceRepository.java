@@ -12,9 +12,11 @@ import java.util.List;
 @Repository
 public class ProductInvoiceRepository {
     private SessionFactory sessionFactory;
+
     public ProductInvoiceRepository(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
     }
+
     public void create(ProductInvoice sf) {
         Session session = sessionFactory.getCurrentSession();
         session.save(sf);

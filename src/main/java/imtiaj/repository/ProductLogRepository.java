@@ -10,11 +10,13 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public class ProductLogRepository{
+public class ProductLogRepository {
     private SessionFactory sessionFactory;
+
     public ProductLogRepository(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
     }
+
     public void create(ProductLogEntity sf) {
         Session session = sessionFactory.getCurrentSession();
         session.save(sf);

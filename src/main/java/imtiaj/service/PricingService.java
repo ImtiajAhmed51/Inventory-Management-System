@@ -1,4 +1,5 @@
 package imtiaj.service;
+
 import imtiaj.model.Pricing;
 import imtiaj.repository.PricingRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,16 +12,12 @@ import java.util.List;
 @Transactional
 @Service
 public class PricingService {
-
     @Autowired
     private PricingRepository pricingRepository;
-
-
 
     public void create(Pricing pricing) {
         pricingRepository.create(pricing);
     }
-
 
     public List<Pricing> findAll() {
         return pricingRepository.getAll();
