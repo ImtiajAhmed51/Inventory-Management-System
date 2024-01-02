@@ -4,42 +4,59 @@ import javax.persistence.*;
 import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
-
-
-/**
- * The persistent class for the user database table.
- * 
- */
 @Entity
 public class User {
 
 	@Id
+	@Column(name="userId")
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int userId;
 
+	@Column(name="CreatedDateTime")
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date createdDateTime;
 
+	@Column(name="CreatedUser")
 	private String createdUser;
 
+	@Column(name="LastModifiedDateTime")
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date lastModifiedDateTime;
 
+	@Column(name="LastModifiedUser")
 	private String lastModifiedUser;
 
+	@Column(name="userAddress")
 	private String userAddress;
 
+	@Column(name="userContactNumber")
 	private BigDecimal userContactNumber;
 
+	@Column(name="userEmail")
 	private String userEmail;
 
+	@Column(name="userFname")
 	private String userFname;
 
+	@Column(name="userLname")
 	private String userLname;
 
+	@Column(name="userName")
 	private String userName;
 
+	@Column(name="VERSION")
 	private BigDecimal version;
+
+	@Column(name="password")
+	private String password;
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
 
 	//bi-directional many-to-one association to UserRole
 	@OneToMany(mappedBy="user")

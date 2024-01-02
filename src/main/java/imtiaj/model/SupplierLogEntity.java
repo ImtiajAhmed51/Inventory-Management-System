@@ -3,12 +3,6 @@ package imtiaj.model;
 import javax.persistence.*;
 import java.math.BigDecimal;
 import java.util.Date;
-
-
-/**
- * The persistent class for the supplier_log database table.
- * 
- */
 @Entity
 @Table(name="supplier_log")
 public class SupplierLogEntity  {

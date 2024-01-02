@@ -2,11 +2,6 @@ package imtiaj.model;
 import javax.persistence.*;
 import java.util.List;
 
-
-/**
- * The persistent class for the permission database table.
- * 
- */
 @Entity
 public class Permission  {
 

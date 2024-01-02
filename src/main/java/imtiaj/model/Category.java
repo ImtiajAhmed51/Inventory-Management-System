@@ -7,29 +7,33 @@ import java.util.Date;
 import java.util.List;
 
 
-/**
- * The persistent class for the category database table.
- * 
- */
 @Entity
+@Table(name="category")
 public class Category {
 
 	@Id
+	@Column(name="categoryId")
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int categoryId;
 
+	@Column(name="categoryName")
 	private String categoryName;
 
+	@Column(name="CreatedDateTime")
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date createdDateTime;
 
+	@Column(name="CreatedUser")
 	private String createdUser;
 
+	@Column(name="LastModifiedDateTime")
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date lastModifiedDateTime;
 
+	@Column(name="LastModifiedUser")
 	private String lastModifiedUser;
 
+	@Column(name="VERSION")
 	private BigDecimal version;
 
 	//bi-directional many-to-one association to Product
@@ -120,6 +124,7 @@ public class Category {
 		return product;
 	}
 
+	@JsonIgnore
 	public List<Stock> getStocks() {
 		return this.stocks;
 	}

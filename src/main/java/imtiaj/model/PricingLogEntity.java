@@ -3,12 +3,6 @@ package imtiaj.model;
 import javax.persistence.*;
 import java.math.BigDecimal;
 import java.util.Date;
-
-
-/**
- * The persistent class for the pricing_log database table.
- * 
- */
 @Entity
 @Table(name="pricing_log")
 public class PricingLogEntity{

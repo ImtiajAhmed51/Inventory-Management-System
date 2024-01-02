@@ -1,12 +1,6 @@
 package imtiaj.model;
 
 import javax.persistence.*;
-
-
-/**
- * The persistent class for the user_role database table.
- * 
- */
 @Entity
 @Table(name="user_role")
 public class UserRole {

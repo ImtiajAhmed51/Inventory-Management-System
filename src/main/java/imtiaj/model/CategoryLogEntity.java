@@ -3,10 +3,6 @@ import javax.persistence.*;
 import java.math.BigDecimal;
 import java.util.Date;
 
-
-/**
- * The persistent class for the category_log database table.
- */
 @Entity
 @Table(name = "category_log")
 public class CategoryLogEntity {

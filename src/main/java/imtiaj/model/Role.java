@@ -4,12 +4,6 @@ import javax.persistence.*;
 import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
-
-
-/**
- * The persistent class for the role database table.
- * 
- */
 @Entity
 public class Role{
 
@@ -38,6 +32,27 @@ public class Role{
 	//bi-directional many-to-one association to UserRole
 	@OneToMany(mappedBy="role")
 	private List<UserRole> userRoles;
+
+	@ManyToMany(fetch = FetchType.EAGER)
+	@JoinTable(
+			name = "user_role",
+			joinColumns = {
+					@JoinColumn(name = "role_roleId")
+			},
+			inverseJoinColumns = {
+					@JoinColumn(name = "user_userId")
+			}
+	)
+	private List<User> users;
+
+
+	public List<User> getUsers() {
+		return users;
+	}
+
+	public void setUsers(List<User> users) {
+		this.users = users;
+	}
 
 	public Role() {
 	}

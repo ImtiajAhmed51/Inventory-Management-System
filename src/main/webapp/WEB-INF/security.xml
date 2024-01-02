@@ -19,8 +19,8 @@
         <cors configuration-source-ref="corsSource" />
 
 
-        <intercept-url pattern="/users"
-                       access="hasRole('ROLE_ADMIN')" />
+        <intercept-url pattern="/user"
+                       access="hasRole('Admin')" />
         <security:intercept-url pattern="/authenticate"
                                 access="permitAll" />
         <security:intercept-url pattern="/storedFoodItem"
@@ -64,10 +64,10 @@
     </user-service>-->
 
     <b:bean id="dataSource" class="com.mysql.cj.jdbc.MysqlDataSource">
-        <b:property name="databaseName" value="ngofood"/>
-        <b:property name="url" value="jdbc:mysql://localhost:3306/ngofood"/>
+        <b:property name="databaseName" value="webapp"/>
+        <b:property name="url" value="jdbc:mysql://localhost:3306/webapp"/>
         <b:property name="user" value="root"/>
-        <b:property name="password" value="root"/>
+        <b:property name="password" value="imtiajanik"/>
     </b:bean>
 <!--password encoder bean start-->
     <b:bean id="noOpPasswordEncoder"
@@ -79,13 +79,14 @@
             <security:jdbc-user-service
                     data-source-ref="dataSource"
                     users-by-username-query="
-				select email,password, enabled
-				from users where email=?"
+				select userName, password, enabled
+				from user where userName=?"
                     authorities-by-username-query="
-				SELECT u.email, r.name FROM user_has_roles ur
-                INNER JOIN roles r ON r.id = ur.role_id
-				INNER JOIN users u ON u.id = ur.user_id
-				WHERE u.email = ?"
+				SELECT *
+FROM user_role ur
+INNER JOIN role r ON r.roleId = ur.role_roleId
+INNER JOIN user u ON u.userId = ur.user_userId
+WHERE u.userName = ?"
             />
             <security:password-encoder ref="noOpPasswordEncoder" />
         </security:authentication-provider>

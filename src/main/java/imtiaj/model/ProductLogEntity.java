@@ -4,11 +4,6 @@ import javax.persistence.*;
 import java.math.BigDecimal;
 import java.util.Date;
 
-
-/**
- * The persistent class for the product_log database table.
- * 
- */
 @Entity
 @Table(name="product_log")
 public class ProductLogEntity  {

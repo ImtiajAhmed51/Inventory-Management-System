@@ -1,12 +1,6 @@
 package imtiaj.model;
 
 import javax.persistence.*;
-
-
-/**
- * The persistent class for the product_pricing database table.
- * 
- */
 @Entity
 @Table(name="product_pricing")
 public class ProductPricing {

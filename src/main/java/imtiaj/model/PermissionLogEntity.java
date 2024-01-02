@@ -1,11 +1,6 @@
 package imtiaj.model;
 import javax.persistence.*;
 
-
-/**
- * The persistent class for the permission_log database table.
- * 
- */
 @Entity
 @Table(name="permission_log")
 public class PermissionLogEntity{

@@ -1,14 +1,10 @@
 package imtiaj.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.math.BigDecimal;
 import java.util.List;
-
-
-/**
- * The persistent class for the invoice database table.
- * 
- */
 @Entity
 public class Invoice {
 
@@ -91,6 +87,7 @@ public class Invoice {
 		this.version = version;
 	}
 
+	@JsonIgnore
 	public List<ProductInvoice> getProductInvoices() {
 		return this.productInvoices;
 	}

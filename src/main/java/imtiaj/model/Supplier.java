@@ -1,15 +1,11 @@
 package imtiaj.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
-
-
-/**
- * The persistent class for the supplier database table.
- * 
- */
 @Entity
 public class Supplier {
 	@Id
@@ -113,6 +109,7 @@ public class Supplier {
 		this.version = version;
 	}
 
+	@JsonIgnore
 	public List<Stock> getStocks() {
 		return this.stocks;
 	}

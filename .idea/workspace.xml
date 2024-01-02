@@ -4,7 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d0aa62b-b9e9-430b-815f-876c9cad7212" name="Changes" comment="mod" />
+    <list default="true" id="4d0aa62b-b9e9-430b-815f-876c9cad7212" name="Changes" comment="init">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/imtiaj/model/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/imtiaj/model/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/imtiaj/model/CategoryLogEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/imtiaj/model/CategoryLogEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/imtiaj/model/Invoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/imtiaj/model/Invoice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/imtiaj/model/Permission.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/imtiaj/model/Permission.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/imtiaj/model/PermissionLogEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/imtiaj/model/PermissionLogEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/imtiaj/model/Pricing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/imtiaj/model/Pricing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/imtiaj/model/PricingLogEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/imtiaj/model/PricingLogEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/imtiaj/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/imtiaj/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/imtiaj/model/ProductInvoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/imtiaj/model/ProductInvoice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/imtiaj/model/ProductLogEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/imtiaj/model/ProductLogEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/imtiaj/model/ProductPricing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/imtiaj/model/ProductPricing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/imtiaj/model/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/imtiaj/model/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/imtiaj/model/RoleLogEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/imtiaj/model/RoleLogEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/imtiaj/model/RolePermission.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/imtiaj/model/RolePermission.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/imtiaj/model/Stock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/imtiaj/model/Stock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/imtiaj/model/StockLogEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/imtiaj/model/StockLogEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/imtiaj/model/Supplier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/imtiaj/model/Supplier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/imtiaj/model/SupplierLogEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/imtiaj/model/SupplierLogEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/imtiaj/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/imtiaj/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/imtiaj/model/UserLogEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/imtiaj/model/UserLogEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/imtiaj/model/UserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/imtiaj/model/UserRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/security.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/security.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,10 +45,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -39,27 +64,30 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2aMbOcq7g4xm4Cl2s3U5UilFI1U" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Smart Tomcat.Unnamed.executor": "Run",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/imtiajahmedanik/IdeaProjects/Inventory-Management-System/src/main/java/imtiaj/repository",
-    "settings.editor.selected.configurable": "com.poratu.idea.plugins.tomcat.setting.TomcatServersConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Smart Tomcat.Unnamed.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/imtiajahmedanik/IdeaProjects/Inventory-Management-System/src/main/java/imtiaj/repository&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.poratu.idea.plugins.tomcat.setting.TomcatServersConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/imtiaj/repository" />
@@ -79,9 +107,6 @@
       <option name="catalinaBase" value="$USER_HOME$/.SmartTomcat/Inventory-Management-System/Inventory-Management-System" />
       <option name="contextPath" value="/Inventory-Management-System" />
       <option name="docBase" value="$PROJECT_DIR$/src/main/webapp" />
-      <option name="envOptions">
-        <map />
-      </option>
       <option name="extraClassPath" value="" />
       <option name="tomcatInfo">
         <TomcatInfo>
@@ -91,6 +116,7 @@
         </TomcatInfo>
       </option>
       <option name="vmOptions" value="" />
+      <module name="Inventory-Management-System" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -144,7 +170,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704145440087</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="init">
+      <option name="closed" value="true" />
+      <created>1704145807298</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1704145807298</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -159,8 +193,8 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="init" />
     <MESSAGE value="mod" />
-    <option name="LAST_COMMIT_MESSAGE" value="mod" />
+    <MESSAGE value="init" />
+    <option name="LAST_COMMIT_MESSAGE" value="init" />
   </component>
 </project>

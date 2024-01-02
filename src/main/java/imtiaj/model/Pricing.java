@@ -1,15 +1,11 @@
 package imtiaj.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
-
-
-/**
- * The persistent class for the pricing database table.
- * 
- */
 @Entity
 public class Pricing {
 
@@ -126,6 +122,7 @@ public class Pricing {
 		this.version = version;
 	}
 
+	@JsonIgnore
 	public List<ProductPricing> getProductPricings() {
 		return this.productPricings;
 	}

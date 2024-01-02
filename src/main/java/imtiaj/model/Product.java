@@ -1,15 +1,12 @@
 package imtiaj.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
 
-
-/**
- * The persistent class for the product database table.
- * 
- */
 @Entity
 public class Product  {
 
@@ -142,6 +139,7 @@ public class Product  {
 		this.category = category;
 	}
 
+	@JsonIgnore
 	public List<ProductInvoice> getProductInvoices() {
 		return this.productInvoices;
 	}
@@ -165,7 +163,7 @@ public class Product  {
 
 		return productInvoice;
 	}
-
+	@JsonIgnore
 	public List<ProductPricing> getProductPricings() {
 		return this.productPricings;
 	}
@@ -188,6 +186,7 @@ public class Product  {
 		return productPricing;
 	}
 
+	@JsonIgnore
 	public List<Stock> getStocks() {
 		return this.stocks;
 	}
